@@ -120,13 +120,13 @@ $(function() {
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > $(this).height()) {
-			$('.top').addClass('active');
+			$('.to-top').addClass('active');
 		}
 		else {
-			$('.top').removeClass('active');
+			$('.to-top').removeClass('active');
 		}
 	});
-	$('.top').click(function() {
+	$('.to-top').click(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
 	});
 
